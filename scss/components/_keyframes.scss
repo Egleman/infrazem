@@ -6,17 +6,10 @@
         opacity: 1;
     }
 }
-@keyframes openMoveSearchForm {
-    0%   {
-        transform: translateY(-130px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
 @keyframes openMoveMobileMenu {
     0%   {
-        transform: translateX(-400px);
+        transform: translateX(400px);
     }
     100% {
         transform: translateX(0);
@@ -33,20 +26,13 @@
         display: none;
     }
 }
-@keyframes closeMoveSearchForm {
-    0%   {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-130px);
-    }
-}
+
 @keyframes closeMoveMobileMenu {
     0%   {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-400px);
+        transform: translateX(400px);
     }
 }
 

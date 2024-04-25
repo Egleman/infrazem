@@ -71,14 +71,10 @@ onlyNumberInputs.forEach(input => {
 
 const header = () => {
     const headerSearchButton = document.querySelector('.header__list-link_icon');
-    const searchModal = document.querySelector('.search');
     const headerBurgerBtn = document.querySelector('.header__burger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const closeMenuBtn = document.querySelector('.mobile-menu__close');
-    const mobileSearchBtn = document.querySelector('[data-button="mobile-search"]');
     const mobileMenuWrapper = document.querySelector('.mobile-menu__wrapper');
-    const mobileMenuSearch = document.querySelector('.mobile-menu__search');
-    const backSearchBtn = document.querySelector('.mobile-menu__back');
 
     headerSearchButton.addEventListener('click', (e) => {
         e.preventDefault();
