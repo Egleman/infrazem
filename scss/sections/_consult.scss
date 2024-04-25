@@ -1,0 +1,98 @@
+.consult {
+    padding: 30px 0;
+    &__wrapper {
+        position: relative;
+        border-radius: 38px;
+        background: rgb(255, 255, 255);
+        padding: 45px 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    &__title {
+        color: $primary;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    &__label {
+        color: rgb(30, 30, 30);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    &__button {
+        max-width: 748px;
+        width: 100%;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        padding: 0 35px;
+        justify-content: flex-start;
+        height: 80px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+    &__message {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 650px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        a {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
+@media (max-width: 646px) {
+    .consult {
+        &__wrapper {
+            padding: 20px;
+        }
+        &__title {
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+        &__label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            margin-bottom: 20px;
+        }
+        &__button {
+            margin-bottom: 20px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            justify-content: center;
+        }
+        &__message {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            a {
+                font-weight: 600;
+            }
+        }
+    }
+}
