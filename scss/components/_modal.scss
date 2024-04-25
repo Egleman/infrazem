@@ -22,6 +22,12 @@
     transition: .6s all;
     display: none;
     justify-content: flex-end;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
     &__body {
         max-width: 400px;
         width: 100%;
@@ -41,8 +47,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateX(-7px);
-        margin-bottom: 70px;
     }
     &__back {
         padding: 0;

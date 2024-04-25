@@ -1,0 +1,97 @@
+.advantages {
+    padding: 50px 0;
+    &__wrapper {
+        box-sizing: border-box;
+        border: 2px solid $primary;
+        border-radius: 38px;
+        background: $white;
+        padding: 25px 0 40px 0;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    &__card {
+        background: url(../img/triangle-ico.png) center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 39px 0;
+        &-text {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 32px;
+            text-transform: uppercase;
+            text-align: center;
+            span {
+                color: $primary;
+            }
+        }
+        &_reverse {
+            flex-direction: column-reverse;
+        }
+    }
+    &__info {
+        padding: 0 30px;
+    }
+    &__title {
+        color: $primary;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: rgb(30, 30, 30);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: center;
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 1062px) {
+    .advantages {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 646px) {
+    .advantages {
+        &__wrapper {
+            border-radius: 18px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            padding: 30px 0;
+            background: url(../img/triangle-ico.png) center/contain no-repeat;
+            &-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

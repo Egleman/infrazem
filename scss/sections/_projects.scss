@@ -1,0 +1,254 @@
+.projects {
+    padding: 50px 0;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    &__toggler {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-label {
+            color: rgb(131, 131, 131);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        &-label.active {
+            color: $primary;
+        }
+        &-area {
+            position: relative;
+            border-radius: 29px;
+            box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.13);
+            background: rgb(219, 219, 219);
+            width: 80px;
+            height: 40px;
+        }
+        &-circle {
+            transition: .3s all;
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.18);
+            background: linear-gradient(180.00deg, rgb(0, 149, 219),rgb(2, 100, 146) 100%);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+        }
+        input {
+            display: none;
+            &:checked + label {
+                .projects__toggler-circle {
+                    left: calc(100% - 35px);
+                }
+            }
+        }
+    }
+    &__title {
+        color: rgb(30, 30, 30);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 38px 38px;
+        overflow: hidden;
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10px 0 30px;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+        }
+        &-title {
+            color: rgb(30, 30, 30);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+        &-icon {
+            display: flex;
+            flex-shrink: 0;
+        }
+        &-price {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #000;
+            margin-bottom: 20px;
+            padding: 0 30px;
+            span {
+                font-weight: 500;
+                color: #838383;
+            }
+        }
+        &-description {
+            color: rgb(30, 30, 30);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            margin-bottom: 20px;
+            padding: 0 30px;
+            span {
+                font-weight: 600;
+            }
+        }
+        &-img {
+            position: relative;
+            height: 260px;
+            .first {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .second {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+        }
+        &-start {
+            color: $white;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 20px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 23px;
+            bottom: 18px;
+        }
+    }
+}
+@media (max-width: 1062px) {
+    .projects {
+        &__slider {
+            margin-right: -40px;
+        }
+        &__swiper {
+            padding-right: 40px;
+            .swiper-slide {
+                width: max-content !important;
+            }
+        }
+        &__card {
+            max-width: 380px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 798px) {
+    .projects {
+        &__top {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 642px) {
+    .projects {
+        &__toggler {
+            &-label {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+            &-area {
+                width: 56px;
+                height: 28px;
+            }
+            &-circle {
+                height: 21px;
+                width: 21px;
+            }
+            input {
+                display: none;
+                &:checked + label {
+                    .projects__toggler-circle {
+                        left: calc(100% - 26px);
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        &__top {
+            gap: 10px;
+            margin-bottom: 50px;
+        }
+        &__card {
+            box-sizing: border-box;
+            border: 1px solid rgb(244, 244, 244);
+            border-radius: 18px;
+            background: rgb(255, 255, 255);
+            max-width: 240px;
+            width: 100%;
+            &-title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+            }
+            &-top {
+                padding: 20px 20px 0 20px;
+            }
+            &-price {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 17px;
+                padding: 0 20px;
+                span {
+                    font-weight: 500;
+                }
+            }
+            &-description {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                margin-bottom: 50px;
+                padding: 0 20px;
+                span {
+                    font-weight: 600;
+                }
+            }
+            &-img {
+                height: 165px;
+            }
+            &-start {
+                font-size: 14px;
+                font-weight: 800;
+                line-height: 17px;
+            }
+            &-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 350px) {
+    .projects {
+        &__slider {
+            margin-right: -15px;
+        }
+        &__swiper {
+            padding-right: 15px;
+        }
+    }
+}

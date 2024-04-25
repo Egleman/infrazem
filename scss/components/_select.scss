@@ -1,73 +1,77 @@
 .select {
-    background: #fff;
     position: relative;
-    border-radius: 20px;
+    height: 52px;
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    background: #fff;
     &__value {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        padding: 0 20px;
+        height: 100%;
         cursor: pointer;
-        padding: 19px 24px;
         &-text {
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-            font-weight: 700;
-            
-            text-align: center;
-            text-transform: uppercase;
+            color: rgb(30, 30, 30);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
         }
-        &-arrow {
-            transition: .3s all;
-        }
-    }
-    
-    &__body {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        background: #fff;
-        border-radius: 0 0 20px 20px;
-        overflow: hidden;
-        display: none;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     &__list {
-        &-option {
+        position: absolute;
+        display: none;
+        padding: 20px;
+        box-sizing: border-box;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 11px;
+        left: -1px;
+        width: calc(100% + 2px);
+        top: calc(100% - 1px);
+        border-left: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        z-index: 2;
+        background: #fff;
+        label {
             display: flex;
             align-items: center;
-            color: rgb(0, 0, 0);
-            font-size: 16px;
-            font-weight: 700;
-            
-            text-align: center;
-            text-transform: uppercase;
-            padding: 10px 24px;
-            width: 100%;
-            box-sizing: border-box;
-            &:hover {
-                background: rgb(246, 144, 0);
-                color: #fff;
+            gap: 12px;
+            .text {
+                color: rgb(131, 131, 131);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
             }
+            .checkbox {
+                box-sizing: border-box;
+                border: 1px solid rgb(206, 206, 206);
+                border-radius: 4px;     
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;           
+            }
+        }
+        input {
+            display: none;
+            &:checked + label {
+                .checkbox {
+                    border: 1px solid $primary;
+                    background: $primary;
+                }
+            }
+        }
+        &_2 {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
 .select.active {
-    border-radius: 20px 20px 0 0;
-    .select__body {
-        display: block;
-    }
-    .select__value-arrow {
-        transform: rotate(180deg);
-    }
-}
-@media (max-width: 1022px) {
-    .select {
-        &__value {
-            &-text {
-                font-size: 16px;
-            }
-        }
+    border-bottom: none;
+    .select__list {
+        display: grid;
     }
 }

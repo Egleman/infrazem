@@ -1,4 +1,10 @@
 .hero {
+    &_first {
+        padding-bottom: 10px;
+    }
+    &_second {
+        padding: 10px 0 50px 0;
+    }
     &__wrapper {
         position: relative;
     }
@@ -84,5 +90,171 @@
     }
     &__button.swiper-button-disabled {
         opacity: .6;
+    }
+}
+@media (max-width: 1062px) {
+    .hero {
+        &__slide {
+            padding: 20px 40px; 
+            min-height: 562px;
+            &-title {
+                color: #fff;
+                font-family: "Arial", sans-serif;
+                position: relative;
+                z-index: 1;
+                text-transform: uppercase;
+                .big {
+                    font-size: 62px;
+                    font-weight: 700;
+                    line-height: 90.71%;
+                }
+                .very-big {
+                    font-size: 115px;
+                    font-weight: 700;
+                    line-height: 82.56%;
+                }
+                .normal-big {
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 122.56%;
+                }
+                .normal {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 798px) {
+    .hero {
+        &__slide {
+            padding: 20px 40px; 
+            min-height: 462px;
+            &-title {
+                color: #fff;
+                font-family: "Arial", sans-serif;
+                position: relative;
+                z-index: 1;
+                text-transform: uppercase;
+                .big {
+                    font-size: 47px;
+                    font-weight: 700;
+                    line-height: 90.71%;
+                }
+                .very-big {
+                    font-size: 100px;
+                    font-weight: 700;
+                    line-height: 82.56%;
+                }
+                .normal-big {
+                    font-size: 33px;
+                    font-weight: 700;
+                    line-height: 122.56%;
+                }
+                .normal {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 646px) {
+    .hero {
+        &__buttons {
+            bottom: 20px;
+            right: 40px;
+        }
+        &__slide {
+            padding: 20px 40px; 
+            min-height: 362px;
+            border-radius: 18px;
+            &-title {
+                color: #fff;
+                font-family: "Arial", sans-serif;
+                position: relative;
+                z-index: 1;
+                text-transform: uppercase;
+                .big {
+                    font-size: 37px;
+                    font-weight: 700;
+                    line-height: 90.71%;
+                }
+                .very-big {
+                    font-size: 80px;
+                    font-weight: 700;
+                    line-height: 82.56%;
+                }
+                .normal-big {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 122.56%;
+                }
+                .normal {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .hero {
+        &__button {
+            width: 30px;
+            height: 30px;
+            svg {
+                width: 7px;
+                height: 14px;
+            }
+        }
+        &__slide {
+            padding: 30px 20px 20px 20px; 
+            min-height: 205px;
+            max-height: 205px;
+            &-button {
+                width: 149px;
+                height: 40px;
+                font-size: 16px;
+                margin-top: auto;
+            }
+            &-title {
+                color: #fff;
+                font-family: "Arial", sans-serif;
+                position: relative;
+                z-index: 1;
+                text-transform: uppercase;
+                .big {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 90.71%;
+                    .normal {
+                        font-size: 14px;
+                    }
+                }
+                .very-big {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 82.56%;
+                }
+                .normal-big {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 122.56%;
+                }
+                .normal {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18px;
+                }
+            }
+        }
+        &__buttons {
+            right: 20px;
+        }
     }
 }

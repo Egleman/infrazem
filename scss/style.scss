@@ -27,6 +27,7 @@ body {
     color: #000;
     min-width: 303px;
     font-size: 16px;
+    background: #F9F9F9;
 }
 
 ol, ul { 
@@ -50,7 +51,7 @@ body::-webkit-scrollbar-track {
   }
   
 body::-webkit-scrollbar-thumb {
-    background: rgb(246, 144, 0);    /* цвет бегунка */
+    background: rgb(0, 149, 219);    /* цвет бегунка */
     border-radius: 20px;       /* округлось бегунка */
 }
 .white {
