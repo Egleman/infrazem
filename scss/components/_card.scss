@@ -1,0 +1,129 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    &__image {
+        height: 227px;
+        margin-bottom: 22px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        color: rgb(45, 45, 45);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; // количество строк
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        
+        line-height: 142%;
+
+        text-align: left;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; // количество строк
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        &_big {
+            display: block;
+            overflow: auto;
+            -webkit-line-clamp: initial; // количество строк
+            -webkit-box-orient: vertical;
+        }
+    }
+    &__button {
+        border-radius: 14px;
+        background: rgb(246, 144, 0);
+        border: 1px solid transparent;
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 6%;
+        text-align: center;
+        text-transform: uppercase;
+        transition: .3s all;
+        padding: 12px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 113px;
+        width: 100%;
+        margin-top: auto;
+        margin-left: auto;
+        height: 35px;
+    }
+}
+@media (max-width: 1022px) {
+    .card {
+        &_small {
+            padding: 20px;
+            .card__title {
+                font-size: 22px;
+                line-height: 25px;
+            }
+            .card__image {
+                height: 150px;
+            }
+            .card__text {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 606px) {
+    .card {
+        padding: 20px;
+        min-height: 453px;
+        box-sizing: border-box;
+        &__image {
+            height: 179px;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            
+            text-align: left;
+        }
+        &__text {
+            font-size: 16px;
+            
+            line-height: 142%;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; // количество строк
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        &_small {
+            padding: 20px;
+            .card__title {
+                font-size: 20px;
+                line-height: 23px;
+            }
+            .card__image {
+                height: 179px;
+            }
+            .card__text {
+                margin-bottom: 20px;
+            }
+        }
+        &__button {
+            border-radius: 10px;
+        }
+    }
+}

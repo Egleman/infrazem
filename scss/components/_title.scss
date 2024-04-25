@@ -1,0 +1,25 @@
+.title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+@media (max-width: 1022px) {
+    .title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 52px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+}
+@media (max-width: 606px) {
+    .title {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+}

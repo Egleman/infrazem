@@ -1,0 +1,81 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: .3s all;
+    border-radius: 103px;
+    background: $primary;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    &_small {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &_white {
+        border: 3px solid $primary;
+        border-radius: 48px;
+        background: $white;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+@media (hover: hover) {
+    .button {
+        &:hover {
+            background: $hoverPrimary;
+        }
+        &_white {
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
+        }
+    }
+    .header__list-link {
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .header__phone {
+        &:hover {
+            color: $hoverPrimary;
+        }
+    }
+}
+@media (hover: none) {
+    .button {
+        &:active {
+            background: $hoverPrimary;
+        }
+        &_white {
+            &:active {
+                background: $primary;
+                color: $white;
+            }
+        }
+    }
+    .header__list-link {
+        &:active {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .header__phone {
+        &:active {
+            color: $hoverPrimary;
+        }
+    }
+}
