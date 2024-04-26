@@ -34,6 +34,9 @@
         &_reverse {
             flex-direction: column-reverse;
         }
+        &:nth-child(2n) {
+            background: url(../img/triangle-ico-reverse.png) center/cover no-repeat;
+        }
     }
     &__info {
         padding: 0 30px;
@@ -54,7 +57,7 @@
         line-height: 29px;
         text-align: center;
         &:not(:last-of-type) {
-            margin-bottom: 20px;
+            margin-bottom: 29px;
         }
     }
 }

@@ -61,6 +61,7 @@
             border-radius: 18px;
         }
         &__list {
+            gap: 30px;
             &-title {
                 font-size: 20px;
                 font-weight: 800;
@@ -70,6 +71,9 @@
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
+            }
+            &-block {
+                gap: 10px;
             }
         }
         &__bg {

@@ -68,10 +68,33 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+    &_2 {
+        .select__value {
+            padding: 0 0 0 20px;
+        }
+        .select__value-arrow {
+            height: 100%;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #DBDBDB;
+            svg {
+                transition: .3s all;
+            }
+        }
+    }
 }
 .select.active {
     border-bottom: none;
     .select__list {
         display: grid;
+    }
+}
+.select_2.active {
+    .select__value-arrow {
+        svg {
+            transform: rotate(180deg);
+        }
     }
 }

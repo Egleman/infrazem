@@ -131,6 +131,19 @@
             bottom: 18px;
         }
     }
+    &__map {
+        height: 458px;
+        display: none;
+    }
+    &__slider {
+        display: none;
+    }
+    &__map.active {
+        display: block;
+    }
+    &__slider.active {
+        display: block;
+    }
 }
 @media (max-width: 1062px) {
     .projects {
@@ -160,6 +173,9 @@
 }
 @media (max-width: 642px) {
     .projects {
+        &__map {
+            height: 425px;
+        }
         &__toggler {
             &-label {
                 font-size: 16px;
@@ -182,6 +198,12 @@
                     }
                 }
             }
+        }
+        &__slider {
+            margin-right: -20px;
+        }
+        &__swiper {
+            padding-right: 20px;
         }
         &__title {
             font-size: 20px;
@@ -225,6 +247,10 @@
                 padding: 0 20px;
                 span {
                     font-weight: 600;
+                    white-space: nowrap;
+                    span {
+                        font-weight: 400;
+                    }
                 }
             }
             &-img {

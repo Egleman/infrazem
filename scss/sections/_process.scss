@@ -47,7 +47,7 @@
             background: url(../img/process-1.svg) center/contain no-repeat;
             width: 54%;
             max-height: 271px;
-            padding-right: 135px;
+            padding-right: 115px;
 
         }
         &_2 {
@@ -179,19 +179,25 @@
             line-height: 20px;
         }
         &__card {
-            padding: 10px 20px 20px 20px;
+            padding: 10px 10px 20px 20px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            row-gap: 10px;
+            row-gap: 2px;
             // grid-template-rows: 30px 1fr;
             min-height: initial;
             max-width: 280px;
+            border-radius: 20px;
             &-step {
                 grid-column: 1 / span 1;
                 grid-row: 1 / span 1;
                 font-size: 26px;
                 font-weight: 800;
                 line-height: 32px;
+                span {
+                    font-size: 14px;
+                    font-weight: 800;
+                    line-height: 17px;
+                }
             }
             &-title {
                 grid-column: 2 / span 1;
@@ -201,6 +207,10 @@
                 line-height: 22px;
                 text-align: right;
                 margin-bottom: 0;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
             }
             &-text {
                 grid-column: 1 / span 2;

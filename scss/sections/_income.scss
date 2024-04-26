@@ -8,6 +8,7 @@
         position: relative;
         display: flex;
         gap: 20px;
+        overflow: hidden;
     }
     &__image {
         max-width: 345px;
@@ -29,6 +30,7 @@
         line-height: 34px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        white-space: nowrap;
     }
     &__text {
         color: rgb(30, 30, 30);
@@ -64,6 +66,13 @@
         font-weight: 800;
         line-height: 24px;
         color: $primary;
+    }
+}
+@media (max-width: 1262px) {
+    .income {
+        &__title {
+            white-space: normal;
+        }
     }
 }
 @media (max-width: 1062px) {

@@ -245,10 +245,17 @@ selects.forEach((select, index) => {
 })
 
 const toggler = document.querySelector('.projects__toggler > label');
+
 if (toggler) {
     const labels = document.querySelectorAll('.projects__toggler-label');
+    const togglerContent = [
+        document.querySelector('.projects__slider'),
+        document.querySelector('.projects__map')
+    ]
     toggler.addEventListener('click', () => {
         labels[0].classList.toggle('active');
         labels[1].classList.toggle('active');
+        togglerContent[0].classList.toggle('active');
+        togglerContent[1].classList.toggle('active');
     })
 }
