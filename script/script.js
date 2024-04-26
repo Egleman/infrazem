@@ -140,64 +140,24 @@ const projectsSlider = new Swiper('.projects__swiper', {
 });
 
 
-const newsSlider = new Swiper('.news__swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '[data-button="news-next"]',
-        prevEl: '[data-button="news-prev"]',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 'auto',
-            spaceBetween: 15,
-        },
-        // 375: {
-        //     slidesPerView: 1.2,
-        //     spaceBetween: 15,
-        // },
-        606: {
-            slidesPerView: 1.5,
-            spaceBetween: 15,
-        },
-        700: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
-        1150: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    },
-});
-
-const historySlider = new Swiper('.history__swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    allowTouchMove: true,
-    loop: true,
-    navigation: {
-        nextEl: '[data-button="history-next"]',
-        prevEl: '[data-button="history-prev"]',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 'auto',
-            spaceBetween: 15,
-        },
-        606: {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-        },
-        1022: {
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-        }
-    },
-});
 header();
 
-
+const modalTabsPanel = document.querySelector('.modal__top');
+const modalTabs = document.querySelectorAll('.modal__tab');
+modalTabsPanel.addEventListener('click', (e) => {
+    if (e.target.closest('.modal__tab')) {
+        const btn = e.target.closest('.modal__tab');
+        modalTabs.forEach(tab => {
+            if (tab === btn) {
+                tab.classList.add('active');
+            } else {
+                if (tab.classList.contains('active')) {
+                    tab.classList.remove('active')
+                }
+            }
+        })
+    }
+})
 
 class Accordion {
     constructor(target, config) {

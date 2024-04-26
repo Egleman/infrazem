@@ -54,6 +54,11 @@
                 font-weight: 700;
                 line-height: 46px;
             }
+            .normal-smallbig {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 55px;
+            }
         }
         &-button {
             position: relative;
@@ -90,6 +95,14 @@
     }
     &__button.swiper-button-disabled {
         opacity: .6;
+    }
+    &_village {
+        .hero__slide-button {
+            width: 305px;
+        }
+        .hero__slide-title {
+            margin-bottom: 120px;
+        }
     }
 }
 @media (max-width: 1062px) {
