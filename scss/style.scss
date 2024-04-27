@@ -68,4 +68,13 @@ q::after {
 q {
     quotes: "«" "»";
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+main {
+    height: 100%;
+}
 @import './imports';

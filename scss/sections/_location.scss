@@ -40,6 +40,13 @@
         font-weight: 600;
         line-height: 29px;
     }
+    &__link {
+        color: rgb(0, 149, 219);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
     &__accordion {
         margin-bottom: 25px;
         &-header {
@@ -145,6 +152,11 @@
             br {
                 display: none;
             }
+        }
+        &__link {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
         }
         &__accordion {
             margin-bottom: 20px;

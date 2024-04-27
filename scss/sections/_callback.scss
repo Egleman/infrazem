@@ -36,6 +36,12 @@
             margin-top: 10px;
         }
     }
+    &_about {
+        padding: 25px 0 50px 0;
+        .callback__title {
+            color: $primary;
+        }
+    }
 }
 @media (max-width: 646px) {
     .callback {
