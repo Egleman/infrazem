@@ -138,7 +138,15 @@ const projectsSlider = new Swiper('.projects__swiper', {
         },
     },
 });
-
+const gallerySlider = new Swiper('.gallery__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+        nextEl: document.querySelector('[data-button="gallery-next"]'),
+        prevEl: document.querySelector('[data-button="gallery-prev"]'),
+    },
+});
 
 header();
 

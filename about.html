@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header header_village">
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="/" class="header__logo">
@@ -44,437 +44,120 @@
                 </button>
             </div>
         </div>
-        <section class="second-menu">
-            <div class="container">
-                <div class="second-menu__wrapper">
-                    <div class="second-menu__title">ПАШУКОВСКИЕ ОЗЁРА</div>
-                    <ul class="second-menu__list">
-                        <li class="second-menu__list-item"><a href="#" class="second-menu__list-link">О ПРОЕКТЕ</a></li>
-                        <li class="second-menu__list-item"><a href="#" class="second-menu__list-link">РАСПОЛОЖЕНИЕ</a>
-                        </li>
-                        <li class="second-menu__list-item"><a href="#" class="second-menu__list-link">ПЛАН и ЦЕНЫ</a>
-                        </li>
-                        <li class="second-menu__list-item"><a href="#" class="second-menu__list-link">ФОТО</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
     </header>
     <main>
-        <section class="hero hero_village">
+        <section class="main-about">
             <div class="container">
-                <div class="hero__wrapper">
-                    <div class="hero__slide">
-                        <h1 class="hero__slide-title">
-                            <span class="normal">Горьковское шоссе, 40 км</span><br>
-                            <span class="big">пашуковские озёра</span><br>
-                            <span class="normal-smallbig">от 2.1 млн ₽</span><br>
-                        </h1>
-                        <button class="button hero__slide-button" toggle="#callback">ПОДОБРАТЬ УЧАСТОК</button>
-                        <img src="./img/hero-2.jpg" alt="bg-image" class="hero__slide-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="about__wrapper">
-                    <h2 class="about__title">О проекте</h2>
-                    <p class="about__text">
-                        «Пашуковские озёра» - проект расположенный в идеальной локации, меньше часа езды от Москвы в
-                        пешей доступности от каскада чистейших озёр Подмосковья. Комфортное место для отдыха и жизни.
-                    </p>
-                    <p class="about__text">
-                        Хорошая транспортная доступность и многофункциональная окружающая инфраструктура.
-                        Купите участок и постройте дом или дачу по собственному проекту и  стилю. Участки продаются без
-                        подряда
-                    </p>
-                    <p class="about__text">
-                        Благоустройство проекта и  его внутренняя структура созданы  по уровню  коттеджных посёлков
-                        комфорт класса.
-                    </p>
+                <div class="main-about__wrapper">
+                    <ul class="main-about__breadcrumbs">
+                        <li class="main-about__breadcrumbs-item"><a href="/" class="main-about__breadcrumbs-link">Главная /</a></li>
+                        <li class="main-about__breadcrumbs-item"><span class="main-about__breadcrumbs-text">О компании</span></li>
+                    </ul>
+                    <h1 class="main-about__title">компаниЯ ИНФРАЗЕМ</h1>
                     <picture>
-                        <source media="(max-width: 646px)" srcset="./img/about-bg-2.png">
-                        <img src="./img/about-bg.png" alt="background-wafe" class="about__wrapper-bg">
+                        <source media="(max-width: 646px)" srcset="./img/main-about-bg-2.png">
+                        <img src="./img/main-about-bg.png" alt="background-wafe" class="main-about__wrapper-bg">
                     </picture>
                 </div>
             </div>
         </section>
-        <section class="cards">
+        <section class="super">
             <div class="container">
-                <div class="cards__grid">
-                    <div class="cards__card">
-                        <div class="cards__card-icon">
-                            <img src="./img/cards-1.svg" alt="icon">
+                <div class="super__grid">
+                    <div class="super__card">
+                        <div class="super__card-top">
+                            <p class="super__card-name">6 соток</p>
+                            <div class="super__card-ico">
+                                <picture>
+                                    <source media="(max-width: 500px)" srcset="./img/super-1-1.svg">
+                                    <img src="./img/super-1.svg" alt="background-wafe">
+                                </picture>                                 
+                            </div>
                         </div>
-                        <p class="cards__card-title">категория земель</p>
-                        <p class="cards__card-text">
-                            Сельскохозяйственного назначения
+                        <p class="super__card-text">
+                            идеальный размер<br class="mobile">
+                            для дачки, зоны барбекю, сауны
+                        </p>
+                        <p class="super__card-for">
+                            для <span>отдыха</span>
                         </p>
                     </div>
-                    <div class="cards__card">
-                        <div class="cards__card-icon">
-                            <img src="./img/cards-2.svg" alt="icon">
+                    <div class="super__card">
+                        <div class="super__card-top">
+                            <p class="super__card-name">инфраструктура</p>
+                            <div class="super__card-ico">
+                                <picture>
+                                    <source media="(max-width: 500px)" srcset="./img/super-2-2.svg">
+                                    <img src="./img/super-2.svg" alt="background-wafe">
+                                </picture>                                    
+                            </div>
                         </div>
-                        <p class="cards__card-title">разрешённый вид использования</p>
-                        <p class="cards__card-text">Дачное строительство</p>
+                        <p class="super__card-text">
+                            продуманная<br>
+                            для комфортного проживания
+                        </p>
+                        <p class="super__card-for">
+                            для <span>жизни</span>
+                        </p>
                     </div>
-                    <div class="cards__card">
-                        <div class="cards__card-icon">
-                            <img src="./img/cards-3.svg" alt="icon">
+                    <div class="super__card">
+                        <div class="super__card-top">
+                            <p class="super__card-name">локации</p>
+                            <div class="super__card-ico">
+                                <picture>
+                                    <source media="(max-width: 500px)" srcset="./img/super-3-3.svg">
+                                    <img src="./img/super-3.svg" alt="background-wafe">
+                                </picture>                                   
+                            </div>
                         </div>
-                        <p class="cards__card-title">ВИД ПРАВА НА УЧАСТОК</p>
-                        <p class="cards__card-text">Частная собственность</p>
-                    </div>
-                    <div class="cards__card">
-                        <div class="cards__card-icon">
-                            <img src="./img/cards-4.svg" alt="icon">
-                        </div>
-                        <p class="cards__card-title">КОНЦЕПЦИЯ УПРАВЛЕНИЯ</p>
-                        <p class="cards__card-text">ТСН (сообщество собственности участков)</p>
+                        <p class="super__card-text">
+                            привлекательные<br class="pc">
+                            для<br class="mobile"> строительных инвестиций<br class="pc pc_mobile"> и бизнеса аренды
+                        </p>
+                        <p class="super__card-for">
+                            для <span>инвестиций</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="hot">
+        <section class="people">
             <div class="container">
-                <h2 class="hot__title">ГОРЯЩИЕ ПРЕДЛОЖЕНИЯ (участки по выгодным ценам)</h2>
-                <div class="hot__grid">
-                    <div class="hot__card">
-                        <div class="hot__card-top">
-                            <p class="hot__card-number">№14</p>
-                            <div class="hot__card-icon">
-                                <svg width="25" height="34" viewBox="0 0 25 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307M12.5 20.1307L15.5 16.5499M12.5 20.1307V24.95"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6.5 25.8501H18.2" stroke="#0095DB" stroke-width="2.07"
-                                        stroke-linecap="round" />
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307L15.5 16.5499"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.9652 5.2998L10.291 9.26196C10.2103 9.38151 10.296 9.54266 10.4402 9.54266H14.2128C14.3661 9.54266 14.4492 9.72218 14.35 9.83912L11.3288 13.3998"
-                                        stroke="#0095DB" stroke-width="2.25" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="hot__card-title">земельный участок</p>
-                        <p class="hot__card-text">6 соток</p>
-                        <div class="hot__card-price">1.8 млн ₽</div>
+                <div class="people__wrapper">
+                    <h2 class="people__title">Инфразем</h2>
+                    <div class="people__info">
+                        <p class="people__text">Всё дело в людях.</p>
+                        <p class="people__text">
+                            Инфразем - компания с человеческим лицом, создающая проекты для людей.
+                        </p>
+                        <p class="people__text">
+                            Миссия компнаии – это создание комфортных условий для жизни, работы и бизнеса в сфере загородной недвижимости.
+                        </p>
+                        <p class="people__text">
+                            Продуманность, современные тенденции и инновации, клиентоориентированность - это наши основные ориентиры в нашей работе.
+                        </p>
                     </div>
-                    <div class="hot__card">
-                        <div class="hot__card-top">
-                            <p class="hot__card-number">№14</p>
-                            <div class="hot__card-icon">
-                                <svg width="25" height="34" viewBox="0 0 25 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307M12.5 20.1307L15.5 16.5499M12.5 20.1307V24.95"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6.5 25.8501H18.2" stroke="#0095DB" stroke-width="2.07"
-                                        stroke-linecap="round" />
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307L15.5 16.5499"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.9652 5.2998L10.291 9.26196C10.2103 9.38151 10.296 9.54266 10.4402 9.54266H14.2128C14.3661 9.54266 14.4492 9.72218 14.35 9.83912L11.3288 13.3998"
-                                        stroke="#0095DB" stroke-width="2.25" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="hot__card-title">земельный участок</p>
-                        <p class="hot__card-text">6 соток</p>
-                        <div class="hot__card-price">1.8 млн ₽</div>
-                    </div>
-                    <div class="hot__card">
-                        <div class="hot__card-top">
-                            <p class="hot__card-number">№14</p>
-                            <div class="hot__card-icon">
-                                <svg width="25" height="34" viewBox="0 0 25 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307M12.5 20.1307L15.5 16.5499M12.5 20.1307V24.95"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6.5 25.8501H18.2" stroke="#0095DB" stroke-width="2.07"
-                                        stroke-linecap="round" />
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307L15.5 16.5499"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.9652 5.2998L10.291 9.26196C10.2103 9.38151 10.296 9.54266 10.4402 9.54266H14.2128C14.3661 9.54266 14.4492 9.72218 14.35 9.83912L11.3288 13.3998"
-                                        stroke="#0095DB" stroke-width="2.25" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="hot__card-title">земельный участок</p>
-                        <p class="hot__card-text">6 соток</p>
-                        <div class="hot__card-price">1.8 млн ₽</div>
-                    </div>
-                    <div class="hot__card">
-                        <div class="hot__card-top">
-                            <p class="hot__card-number">№14</p>
-                            <div class="hot__card-icon">
-                                <svg width="25" height="34" viewBox="0 0 25 34" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307M12.5 20.1307L15.5 16.5499M12.5 20.1307V24.95"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6.5 25.8501H18.2" stroke="#0095DB" stroke-width="2.07"
-                                        stroke-linecap="round" />
-                                    <path
-                                        d="M19.7127 20.1307C21.737 18.2166 23 15.5058 23 12.5C23 10.8303 22.6103 9.25164 21.9168 7.85C20.2019 4.38363 16.6293 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 15.5058 3.26302 18.2166 5.2873 20.1307C5.99989 20.8045 6.5 21.7024 6.5 22.6831V26C6.5 29.3137 9.18629 32 12.5 32C15.8137 32 18.5 29.3137 18.5 26V23.6M9.5 16.5499L12.5 20.1307L15.5 16.5499"
-                                        stroke="#1D1D1B" stroke-width="2.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.9652 5.2998L10.291 9.26196C10.2103 9.38151 10.296 9.54266 10.4402 9.54266H14.2128C14.3661 9.54266 14.4492 9.72218 14.35 9.83912L11.3288 13.3998"
-                                        stroke="#0095DB" stroke-width="2.25" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="hot__card-title">земельный участок</p>
-                        <p class="hot__card-text">6 соток</p>
-                        <div class="hot__card-price">1.8 млн ₽</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="improvement">
-            <div class="container">
-                <h2 class="improvement__title">
-                    ОБУСТРОЙСТВО
-                </h2>
-                <div class="improvement__grid">
-                    <div class="improvement__card">
-                        <div class="improvement__card-img">
-                            <img src="./img/invorement-1.svg" alt="icon">
-                        </div>
-                        <div class="improvement__card-body">
-                            <p class="improvement__card-title">электричество</p>
-                            <p class="improvement__card-text">
-                                Электричество<br>
-                                по 15 кВт на участок
-                            </p>
-                        </div>
-                    </div>
-                    <div class="improvement__card">
-                        <div class="improvement__card-img">
-                            <img src="./img/invorement-2.svg" alt="icon">
-                        </div>
-                        <div class="improvement__card-body">
-                            <p class="improvement__card-title">дороги</p>
-                            <p class="improvement__card-text">
-                                Асфальтовые дороги подъездные<br>
-                                и по посёлку
-                            </p>
-                        </div>
-                    </div>
-                    <div class="improvement__card">
-                        <div class="improvement__card-img">
-                            <img src="./img/invorement-3.svg" alt="icon">
-                        </div>
-                        <div class="improvement__card-body">
-                            <p class="improvement__card-title">безопасность</p>
-                            <p class="improvement__card-text">
-                                Въездная группа КПП /шлагбаум / видеонаблюдение/охрана
-                            </p>
-                        </div>
-                    </div>
-                    <div class="improvement__card">
-                        <div class="improvement__card-img">
-                            <img src="./img/invorement-4.svg" alt="icon">
-                        </div>
-                        <div class="improvement__card-body">
-                            <p class="improvement__card-title">ограждение</p>
-                            <p class="improvement__card-text">
-                                Забор<br>
-                                по периметру
-                            </p>
-                        </div>
-                    </div>
-                    <div class="improvement__card">
-                        <div class="improvement__card-img">
-                            <img src="./img/invorement-5.svg" alt="icon">
-                        </div>
-                        <div class="improvement__card-body">
-                            <p class="improvement__card-title">
-                                общественные зоны
-                            </p>
-                            <p class="improvement__card-text">
-                                Гостевая парковка/зона сбора мусора/спортивная и детские площадки/ мини-рынок
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="container">
-                <h2 class="gallery__title">ФОТОГАЛЕРЕЯ</h2>
-                <div class="gallery__wrapper">
-                    <div class="gallery__swiper swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="gallery__slide">
-                                    <img src="./img/gallery-1.jpg" alt="gallery-image">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="gallery__slide">
-                                    <img src="./img/gallery-1.jpg" alt="gallery-image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery__buttons">
-                        <button class="button gallery__button prev" data-button="gallery-prev">
-                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.5 26L2.91421 15.4142C2.13317 14.6332 2.13317 13.3668 2.91421 12.5858L13.5 2"
-                                    stroke="white" stroke-width="4" stroke-linecap="round" />
-                            </svg>
-                        </button>
-                        <button class="button gallery__button next" data-button="gallery-next">
-                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.5 26L13.0858 15.4142C13.8668 14.6332 13.8668 13.3668 13.0858 12.5858L2.5 2"
-                                    stroke="white" stroke-width="4" stroke-linecap="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="callback">
-            <div class="container">
-                <div class="callback__wrapper">
-                    <h2 class="callback__title">СВЯЗАТЬСЯ С НАМИ</h2>
-                    <form action="#" class="callback__form">
-                        <div class="modal__form-wrap">
-                            <input type="text" name="name" placeholder="Введите ваше имя">
-                            <p class="modal__form-error">Поле должно быть заполнено</p>
-                        </div>
-                        <div class="modal__form-wrap">
-                            <input type="text" name="phone" data-input="masked" placeholder="+ 7 ( ___ ) ___ __ __">
-                            <p class="modal__form-error">Поле должно быть заполнено</p>
-                        </div>
-                        <div class="modal__form-wrap comment">
-                            <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
-                            <p class="modal__form-error">Поле должно быть заполнено</p>
-                        </div>
-                        <button type="submit"
-                            class="button button_white selection__form-button callback__form-button">Отправить</button>
-                    </form>
                     <picture>
-                        <source media="(max-width: 646px)" srcset="./img/callback-bg-2.png">
-                        <img src="./img/callback-bg.png" alt="background-wafe" class="callback__wrapper-bg">
+                        <source media="(max-width: 646px)" srcset="./img/people-bg-2.png">
+                        <img src="./img/people-bg.png" alt="background-wafe" class="people__wrapper-bg">
                     </picture>
                 </div>
             </div>
         </section>
-        <section class="location">
+        <section class="connection">
             <div class="container">
-                <h2 class="location__title">РАСПОЛОЖЕНИЕ</h2>
-                <div class="location__wrapper">
-                    <div class="location__info">
-                        <div class="location__block">
-                            <p class="location__label">Адрес</p>
-                            <p class="location__text">
-                                Россия, Московская область, Богородский городской округ<br> (вблизи д.Мишуково)
-                            </p>
-                        </div>
-                        <div class="location__block">
-                            <p class="location__label">График работы</p>
-                            <p class="location__text">
-                                Пн-Вс: с 10:00 до 20:00
-                            </p>
-                        </div>
-                        <div class="location__block">
-                            <p class="location__label">Координаты</p>
-                            <p class="location__text">
-                                55.902773, 38.263738
-                            </p>
-                        </div>
-                        <div class="accordion location__accordion">
-                            <div class="accordion__item location__accordion-item">
-                                <div class="accordion__header location__accordion-header">
-                                    <div class="location__accordion-title">
-                                        Как добраться на личном странспорте
-                                    </div>
-                                    <svg class="location__accordion-arrow" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 12L15 18L8 12" stroke="#0095DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                            
-                                </div>
-                                <div class="accordion__body location__accordion-body">
-                                    <div class="accordion__content location__accordion-content">
-                                        <p class="location__accordion-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion__item location__accordion-item">
-                                <div class="accordion__header location__accordion-header">
-                                    <div class="location__accordion-title">Как добраться на общественном транспорте</div>
-                                    <svg class="location__accordion-arrow" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 12L15 18L8 12" stroke="#0095DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                        
-                                </div>
-                                <div class="accordion__body location__accordion-body">
-                                    <div class="accordion__content location__accordion-content">
-                                        <p class="location__accordion-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="button location__button">посмотреть окружение</button>
-                    </div>
-                    <div class="location__map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac8bce4c86954b5b952b0468806df7a9a43dac824e2d70fd71be6c6002790aa10&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="near">
-            <div class="container">
-                <div class="near__wrapper">
-                    <h2 class="near__title">проекты рядом</h2>
-                    <div class="near__card">
-                        <div class="projects__card">
-                            <div class="projects__card-top">
-                                <h3 class="projects__card-title">Пашуковские озёра</h3>
-                                <img src="./img/lamp-ico.svg" alt="icon" class="projects__card-icon">
-                            </div>
-                            <div class="projects__card-price">
-                                от 2.1 млн. ₽ <span>| от 6 сот.</span>
-                            </div>
-                            <p class="projects__card-description">
-                                <span>Горьковское шоссе <span>(40 км)</span></span><br>
-                                Всегочас езды от Москвы вблизи каскада озёр и леса, с полной городской
-                                инфраструктурой.
-                            </p>
-                            <div class="projects__card-img">
-                                <img src="./img/projects-image.jpg" alt="image" class="first">
-                                <img src="./img/projects-poligon.png" alt="ico" class="second">
-                                <p class="projects__card-start">старт<br> продаж</p>
+                <div class="connection__wrapper">
+                    <h2 class="connection__title">СВЯЗАТЬСЯ С НАМИ</h2>
+                    <div class="connection__grid">
+                        <div class="connection__card">
+                            <div class="connection__card-img">
+                                <picture>
+                                    <source media="(max-width: 646px)" srcset="./img/connection-1-1.svg">
+                                    <img src="./img/connection-1.svg" alt="background-wafe">
+                                </picture>
                             </div>
                         </div>
                     </div>
-                    <picture>
-                        <source media="(max-width: 646px)" srcset="./img/near-bg-2.png">
-                        <img src="./img/near-bg.png" alt="background-wafe" class="near__wrapper-bg">
-                    </picture>
                 </div>
             </div>
         </section>
@@ -688,11 +371,9 @@
                 <button class="modal__tab">Визит</button>
                 <a href="#" class="modal__close" toggle="#callback">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="18.3848" y="5.65686" width="2" height="18" rx="1"
-                            transform="rotate(45 18.3848 5.65686)" fill="#D9D9D9" />
-                        <rect x="5.65674" y="7.07104" width="2" height="18" rx="1"
-                            transform="rotate(-45 5.65674 7.07104)" fill="#D9D9D9" />
-                    </svg>
+                        <rect x="18.3848" y="5.65686" width="2" height="18" rx="1" transform="rotate(45 18.3848 5.65686)" fill="#D9D9D9"/>
+                        <rect x="5.65674" y="7.07104" width="2" height="18" rx="1" transform="rotate(-45 5.65674 7.07104)" fill="#D9D9D9"/>
+                    </svg>                        
                 </a>
             </div>
             <div class="modal__subtitle">Оставьте ваш номер телефона и получите специальное предложение от Директора по
@@ -708,7 +389,7 @@
                     <p class="modal__form-error" data-err="phone">Поле должно быть заполнено</p>
                 </div>
                 <div class="modal__from-wrap">
-                    <div class="select">
+                    <div class="select select_2">
                         <div class="select__value">
                             <p class="select__value-text">Удобное время для звонка</p>
                             <div class="select__value-arrow">
@@ -799,8 +480,7 @@
                     <input type="checkbox" name="privacy" id="privacy">
                     <label for="privacy">
                         <div class="checkboxx">
-                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 3.5L3.79289 6.29289C4.18342 6.68342 4.81658 6.68342 5.20711 6.29289L10.5 1"
                                     stroke="white" stroke-width="2" stroke-linecap="round" />
                             </svg>
@@ -810,8 +490,7 @@
                 </div>
                 <button type="submit" class="button modal__form-button">Отправить</button>
                 <div class="modal__form-message">
-                    Мы всегда будем рады вашему звонку и ответим на возникшие вопросы по телефону:<br> <a
-                        href="tel:79005557799">+7 (900) 555-77-99</a>
+                    Мы всегда будем рады вашему звонку и ответим на возникшие вопросы по телефону:<br> <a href="tel:79005557799">+7 (900) 555-77-99</a>
                 </div>
             </form>
         </div>

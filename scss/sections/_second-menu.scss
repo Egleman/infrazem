@@ -19,6 +19,7 @@
         width: 100%;
         box-sizing: border-box;
         margin: 0 auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
     &__title {
         color: rgb(0, 149, 219);
@@ -59,6 +60,7 @@
             padding: 0 0 30px 0;
             border-radius: 0;
             align-items: flex-start;
+            box-shadow: none;
         }
         &__list {
             flex-wrap: wrap;

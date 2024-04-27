@@ -6,6 +6,7 @@
 @import './components/card';
 @import './components/select';
 @import './components/buttons';
+@import './components/modal';
 
 @import './sections/header';
 @import './sections/hero';
@@ -23,6 +24,13 @@
 @import './sections/second-menu';
 @import './sections/about';
 @import './sections/cards';
+@import './sections/hot';
+@import './sections/improvement';
+@import './sections/gallery';
+@import './sections/callback';
+@import './sections/location';
+@import './sections/near';
 
-@import './components/modal';
-
+@import './sections/main-about';
+@import './sections/super';
+@import './sections/people';

@@ -348,6 +348,19 @@
                 text-align: left;
                 padding: 0 20px;
             }
+            textarea {
+                border: 1px solid rgb(219, 219, 219);
+                height: 123px;
+                box-sizing: border-box;
+                width: 100%;
+                color: rgb(30, 30, 30);
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: left;
+                padding: 5px 20px;
+                resize: none;
+            }
         }
         &-error {
             font-size: 0.625rem;
@@ -541,4 +554,14 @@
        
     }
 }
-
+@media (max-width: 500px) {
+    .modal {
+        &__form {
+            &-wrap {
+                textarea {
+                    height: 72px;
+                }
+            }
+        }
+    }
+}

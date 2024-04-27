@@ -1,0 +1,116 @@
+.improvement {
+    padding: 50px 0;
+    &__title {
+        color: rgb(0, 149, 219);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        margin-bottom: 30px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        &-img {
+            display: flex;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+        &-title {
+            color: rgb(0, 149, 219);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 27px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-align: center;
+            min-height: 54px;
+        }
+        &-text {
+            color: rgb(30, 30, 30);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
+        &-body {
+            transform: translateY(-45px);
+        }
+    }
+}
+@media (max-width: 1260px) {
+    .improvement {
+        &__grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+@media (max-width: 1062px) {
+    .improvement {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__card {
+            &-title {
+                min-height: auto;
+            }
+            
+        }
+    }
+}
+@media (max-width: 798px) {
+    .improvement {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__card {
+            &-title {
+                min-height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 662px) {
+    .improvement {
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+            max-width: 243px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__card {
+            &-title {
+                min-height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .improvement {
+        &__card {
+            &-title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+            }
+            &-text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+          
+        }
+    }
+}
