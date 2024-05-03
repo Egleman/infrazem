@@ -25,7 +25,16 @@
         font-weight: 400;
         line-height: 27px;
         &:not(:last-of-type) {
-            margin-bottom: 29px;
+            margin-bottom: 26px;
+        }
+    }
+}
+@media (max-width: 1062px) {
+    .about {
+        &__text {
+            br {
+                display: none;
+            }
         }
     }
 }

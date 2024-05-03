@@ -100,8 +100,27 @@
         .hero__slide-button {
             width: 305px;
         }
+        .hero__slide {
+            gap: 125px;
+        }
         .hero__slide-title {
-            margin-bottom: 120px;
+            margin-bottom: 0;
+            margin-top: 0;
+            .normal {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 46px;
+                text-transform: none;
+            }
+            .big {
+                line-height: 130.71%;
+            }
+            .normal-smallbig {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 55px;
+                text-transform: none;
+            }
         }
     }
 }
@@ -241,6 +260,12 @@
             }
             
         }
+        &_first {
+            padding-bottom: 0;
+        }
+        &_second {
+            padding: 5px 0 50px 0;
+        }
     }
 }
 @media (max-width: 500px) {
@@ -259,6 +284,8 @@
             max-height: 205px;
             &-button {
                 width: 149px;
+                min-height: 40px;
+                max-height: 40px;
                 height: 40px;
                 font-size: 16px;
                 margin-top: auto;

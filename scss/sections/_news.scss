@@ -1,5 +1,8 @@
 .news {
     padding: 50px 0;
+    &_newspage {
+        padding: 35px 0 110px 0;
+    }
     &__title {
         color: $primary;
         font-size: 36px;
@@ -79,6 +82,7 @@
             border-radius: 18px;
             &-body {
                 height: auto;
+                padding: 20px;
             }
             &-link {
                 font-size: 14px;
@@ -93,7 +97,9 @@
             line-height: 24px;
             margin-bottom: 30px;
         }
-    
+        &_newspage {
+            padding: 27px 0 52px 0;
+        }
     }
 }
 @media (max-width: 450px) {
@@ -101,6 +107,13 @@
         &__card {
             &-img {
                 min-height: 218px;
+                &_big {
+                    height: 253px;
+                }
+                &_small {
+                    max-height: 218px;
+                    height: 218px;
+                }
             }
             &-title {
                 font-size: 18px;

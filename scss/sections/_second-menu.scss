@@ -31,7 +31,7 @@
     &__list {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 52px;
         &-link {
             color: rgb(30, 30, 30);
             font-size: 18px;
@@ -57,10 +57,11 @@
         position: static;
         &__wrapper {
             flex-direction: column;
-            padding: 0 0 30px 0;
+            padding: 0 0 26px 0;
             border-radius: 0;
             align-items: flex-start;
             box-shadow: none;
+            background: #F9F9F9;
         }
         &__list {
             flex-wrap: wrap;
@@ -70,9 +71,9 @@
 @media (max-width: 642px) {
     .second-menu {
         top: 69px;
-        .container {
-            background: #fff;
-        }
+        // .container {
+        //     background: #fff;
+        // }
         &__wrapper {
             gap: 20px;
         }

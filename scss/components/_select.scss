@@ -98,3 +98,10 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .select {
+        &_2 {
+            height: 72px;
+        }
+    }
+}

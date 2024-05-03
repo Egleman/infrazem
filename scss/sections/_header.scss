@@ -1,9 +1,9 @@
 .header {
-    padding: 42px 0 36px 0;
+    padding: 39px 0 36px 0;
     position: sticky;
     top: 0;
     z-index: 12;
-    background: #fff;
+    background: #F9F9F9;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
         align-items: center;
         gap: 12px;
         flex-shrink: 0;
-        margin-right: 35px;
+        margin-right: 49px;
         svg {
             display: flex;
             width: 26.59px;
@@ -58,19 +58,19 @@
     &__contacts {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
         margin-left: auto;
     }
     &__phone {
         color: $primary;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 20px;
         text-transform: uppercase;
         transition: .3s all;
     }
     &__button {
-        width: 155px;
+        width: 161px;
         height: 35px;
     }
     &__burger {
@@ -152,7 +152,7 @@
 }
 @media (max-width: 646px) {
     .header {
-        padding: 20px 0;
+        padding: 20px 0 30px 0;
         &__wrapper {
             justify-content: space-between;
         }

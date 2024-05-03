@@ -1,5 +1,5 @@
 .improvement {
-    padding: 50px 0;
+    padding: 50px 0 63px 0px;
     &__title {
         color: rgb(0, 149, 219);
         font-size: 32px;
@@ -41,7 +41,7 @@
             text-align: center;
         }
         &-body {
-            transform: translateY(-45px);
+            transform: translateY(-38px);
         }
     }
 }
@@ -79,6 +79,7 @@
 }
 @media (max-width: 662px) {
     .improvement {
+        padding: 46px 0 63px 0px;
         &__title {
             font-size: 20px;
             font-weight: 600;
@@ -93,6 +94,9 @@
         &__card {
             &-title {
                 min-height: auto;
+            }
+            &-body {
+                transform: translateY(-44px);
             }
         }
     }

@@ -56,6 +56,9 @@
         font-weight: 400;
         line-height: 29px;
         text-align: center;
+        br {
+            display: none;
+        }
         &:not(:last-of-type) {
             margin-bottom: 29px;
         }
@@ -75,13 +78,18 @@
     .advantages {
         &__wrapper {
             border-radius: 18px;
+            padding: 0 0 15px 0;
         }
         &__grid {
             grid-template-columns: 1fr;
+            margin-bottom: 25px;
         }
         &__card {
             padding: 30px 0;
             background: url(../img/triangle-ico.png) center/contain no-repeat;
+            &:nth-child(2n) {
+                background: url(../img/triangle-ico-reverse.png) center/contain no-repeat;
+            }
             &-text {
                 font-size: 20px;
                 line-height: 24px;
@@ -90,11 +98,17 @@
         &__title {
             font-size: 20px;
             line-height: 24px;
-            margin-bottom: 20px;
+            margin-bottom: 23px;
         }
         &__text {
             font-size: 16px;
             line-height: 20px;
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+            br {
+                display: block;
+            }
         }
     }
 }

@@ -211,8 +211,8 @@
             line-height: 24px;
         }
         &__top {
-            gap: 10px;
-            margin-bottom: 50px;
+            gap: 11px;
+            margin-bottom: 29px;
         }
         &__card {
             box-sizing: border-box;
@@ -228,6 +228,8 @@
             }
             &-top {
                 padding: 20px 20px 0 20px;
+                align-items: flex-start;
+                margin-bottom: 11px;
             }
             &-price {
                 font-size: 16px;
